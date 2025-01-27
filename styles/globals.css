@@ -20,6 +20,7 @@ h5,
 h6,
 p {
   margin: 0;
+  font-family: var(--main-font);
 }
 
 ul {
@@ -40,3 +41,15 @@ a {
   font-size: inherit;
   line-height: inherit;
 }
+
+.title-decor {
+  background-color: var(--bg-color);
+  color: var(--accent-color);
+  max-height: max-content;
+}
+
+p {
+  line-height: 130%;
+  font-size: var(--main-size);
+}
+
