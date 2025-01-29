@@ -10,11 +10,11 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --background-image: url(../images/cover-image-light.png);
-  --main-font: 'IBM Plex mono', monospace, sans-serif;
-  --bg-color: #FF8DCB;
+  --main-font: "IBM Plex mono", monospace, sans-serif;
+  --bg-color: #ff8dcb;
   --text-color: #353430;
   --accent-color: #353430;
-  --h1-color: #FFC2E6;
+  --h1-color: #ffc2e6;
   --main-size: 18px;
   --bold: 700;
   --normal: 400;
@@ -22,13 +22,13 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    /* Дублируем переменные светлой темы */ 
+    /* Дублируем переменные светлой темы */
     --background-image: url(../images/cover-image-light.png);
-    --main-font: 'IBM Plex mono', monospace, sans-serif;
-    --bg-color: #FF8DCB;
+    --main-font: "IBM Plex mono", monospace, sans-serif;
+    --bg-color: #ff8dcb;
     --text-color: #353430;
     --accent-color: #353430;
-    --h1-color: #FFC2E6;
+    --h1-color: #ffc2e6;
     --main-size: 18px;
     --bold: 700;
     --normal: 400;
@@ -58,58 +58,8 @@
   border-right: 1px solid var(--accent-color);
 }
 
-@media (376px < width <= 768px ) {
-  .theme-light .content-section {
-    padding: 20px;
-  }
-
-  .theme-light .decorated-zone::before {
-    bottom: 20px;
-    left: 20px;
-    border-bottom: 1px solid var(--accent-color);
-    border-left: 1px solid var(--accent-color);
-  }
-  
-  .theme-light .decorated-zone::after {
-    top: 20px;
-    right: 20px;
-    border-top: 1px solid var(--accent-color);
-    border-right: 1px solid var(--accent-color);
-  }
-
-  .theme-light .header {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr min-content 1fr;
-    padding-inline-start: 0;
-  }
-}
-
-@media (768px < width <= 1024px ) {
-  .theme-light .content-section {
-    padding: 20px;
-  }
-
-  .theme-light .decorated-zone::before {
-    bottom: 20px;
-    left: 20px;
-    border-bottom: 1px solid var(--accent-color);
-    border-left: 1px solid var(--accent-color);
-  }
-  
-  .theme-light .decorated-zone::after {
-    top: 20px;
-    right: 20px;
-    border-top: 1px solid var(--accent-color);
-    border-right: 1px solid var(--accent-color);
-  }
-
-  .theme-light .header {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr min-content 1fr;
-    padding-inline-start: 0;
-  }
+.theme-light .header__theme-menu-button:hover {
+  border: 1px solid rgba(53, 52, 48, 0.4);
 }
 
 .theme-light .header__theme-menu {
@@ -130,7 +80,7 @@
 }
 
 .theme-light .header__check::before {
-  content: 'rec';
+  content: "rec";
   font-family: var(--main-font);
   text-transform: uppercase;
   color: var(--bg-color);
@@ -142,7 +92,7 @@
 }
 
 .theme-light .header__check::after {
-  content: '';
+  content: "";
   display: none;
   width: 9px;
   height: 9px;
@@ -154,6 +104,64 @@
   right: 9px;
 }
 
-.theme-light .header__theme-menu-button:hover {
-  border: 1px solid var(--accent-color);
+@media (376px < width <= 768px) {
+  .theme-light .content-section {
+    padding: 20px;
+  }
+
+  .theme-light .decorated-zone::before {
+    bottom: 20px;
+    left: 20px;
+    border-bottom: 1px solid var(--accent-color);
+    border-left: 1px solid var(--accent-color);
+  }
+
+  .theme-light .decorated-zone::after {
+    top: 20px;
+    right: 20px;
+    border-top: 1px solid var(--accent-color);
+    border-right: 1px solid var(--accent-color);
+  }
+
+  .theme-light .header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr min-content 1fr;
+    padding-inline-start: 0;
+  }
+
+  .theme-light .header__theme-menu-button:hover {
+    border: 1px solid rgba(53, 52, 48, 0.4);
+  }
+}
+
+@media (768px < width <= 1024px) {
+  .theme-light .content-section {
+    padding: 20px;
+  }
+
+  .theme-light .decorated-zone::before {
+    bottom: 20px;
+    left: 20px;
+    border-bottom: 1px solid var(--accent-color);
+    border-left: 1px solid var(--accent-color);
+  }
+
+  .theme-light .decorated-zone::after {
+    top: 20px;
+    right: 20px;
+    border-top: 1px solid var(--accent-color);
+    border-right: 1px solid var(--accent-color);
+  }
+
+  .theme-light .header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr min-content 1fr;
+    padding-inline-start: 0;
+  }
+
+  .theme-light .header__theme-menu-button:hover {
+    border: 1px solid rgba(53, 52, 48, 0.4);
+  }
 }
