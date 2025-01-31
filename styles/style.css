@@ -3,6 +3,7 @@
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
   background-image: var(--background-image);
+  background-color: var(--accent-color);
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
@@ -146,6 +147,11 @@ header {
   gap: 20px;
 }
 
+.section__advice .section-list-item {
+  display: grid;
+  gap: 20px;
+}
+
 .section__title {
   color: var(--bg-color);
   font-size: var(--main-size);
@@ -217,6 +223,7 @@ header {
   .page {
     /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
     background-image: var(--background-image);
+    background-color: var(--accent-color);
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
@@ -381,6 +388,11 @@ header {
     width: max-content;
   }
 
+  .section__advice .section-list-item {
+    display: grid;
+    gap: 20px;
+  }
+
   .section__title {
     color: var(--bg-color);
     font-size: var(--main-size);
@@ -478,6 +490,7 @@ header {
   .page {
     /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
     background-image: var(--background-image);
+    background-color: var(--accent-color);
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
