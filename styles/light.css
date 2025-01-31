@@ -18,6 +18,7 @@
   --main-size: 18px;
   --bold: 700;
   --normal: 400;
+  --current-color: #fff1f7;
 }
 
 @media (prefers-color-scheme: light) {
@@ -32,12 +33,14 @@
     --main-size: 18px;
     --bold: 700;
     --normal: 400;
+    --current-color: #fff1f7;
   }
 }
 
 .theme-light .page {
   /* Вам также нужно будет написать ряд подобных селекторов */
   background-image: var(--background-image);
+  background-color: var(--current-color);
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
@@ -91,6 +94,7 @@
   .theme-light .page {
     /* Вам также нужно будет написать ряд подобных селекторов */
     background-image: var(--background-image);
+    background-color: var(--current-color);
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
@@ -139,6 +143,7 @@
   .theme-light .page {
     /* Вам также нужно будет написать ряд подобных селекторов */
     background-image: var(--background-image);
+    background-color: var(--current-color);
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
