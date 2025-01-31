@@ -10,14 +10,10 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --background-image: url(../images/cover-image-light.png);
-  --main-font: "IBM Plex mono", monospace, sans-serif;
   --bg-color: #ff8dcb;
   --text-color: #353430;
   --accent-color: #353430;
   --h1-color: #ffc2e6;
-  --main-size: 18px;
-  --bold: 700;
-  --normal: 400;
   --current-color: #fff1f7;
 }
 
@@ -25,26 +21,65 @@
   :root {
     /* Дублируем переменные светлой темы */
     --background-image: url(../images/cover-image-light.png);
-    --main-font: "IBM Plex mono", monospace, sans-serif;
     --bg-color: #ff8dcb;
     --text-color: #353430;
     --accent-color: #353430;
     --h1-color: #ffc2e6;
-    --main-size: 18px;
-    --bold: 700;
-    --normal: 400;
     --current-color: #fff1f7;
+  }
+
+  .page {
+    /* Вам также нужно будет написать ряд подобных селекторов */
+    background-color: var(--current-color);
+  }
+
+  .decorated-zone::before {
+    bottom: 10px;
+    left: 10px;
+    border-bottom: 1px solid var(--accent-color);
+    border-left: 1px solid var(--accent-color);
+  }
+
+  .decorated-zone::after {
+    top: 10px;
+    right: 10px;
+    border-top: 1px solid var(--accent-color);
+    border-right: 1px solid var(--accent-color);
+  }
+
+  .header__theme-menu-button:hover {
+    border: 1px solid rgba(53, 52, 48, 0.4);
+  }
+
+  .header__theme-menu {
+    font-family: var(--main-font);
+    color: var(--accent-color);
+    font-size: var(--main-size);
+  }
+
+  .section__title {
+    color: var(--accent-color);
+    font-size: var(--main-size);
+    font-weight: var(--bold);
+    line-height: 130%;
+  }
+
+  .card__text {
+    color: var(--accent-color);
+  }
+
+  .header__check::before {
+    display: none;
+  }
+
+  .header__check::after {
+    display: none;
   }
 }
 
 .theme-light .page {
   /* Вам также нужно будет написать ряд подобных селекторов */
-  background-image: var(--background-image);
   background-color: var(--current-color);
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
-  display: grid;
 }
 
 .theme-light .decorated-zone::before {
@@ -88,102 +123,4 @@
 
 .theme-light .header__check::after {
   display: none;
-}
-
-@media (376px < width <= 768px) {
-  .theme-light .page {
-    /* Вам также нужно будет написать ряд подобных селекторов */
-    background-image: var(--background-image);
-    background-color: var(--current-color);
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    display: grid;
-  }
-
-  .theme-light .content-section {
-    padding: 20px;
-  }
-
-  .theme-light .decorated-zone::before {
-    bottom: 20px;
-    left: 20px;
-    border-bottom: 1px solid var(--accent-color);
-    border-left: 1px solid var(--accent-color);
-  }
-
-  .theme-light .decorated-zone::after {
-    top: 20px;
-    right: 20px;
-    border-top: 1px solid var(--accent-color);
-    border-right: 1px solid var(--accent-color);
-  }
-
-  .theme-light .header {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr min-content 1fr;
-    padding-inline-start: 0;
-  }
-
-  .theme-light .header__check::before {
-    display: none;
-  }
-
-  .theme-light .header__check::after {
-    display: none;
-  }
-
-  .theme-light .header__theme-menu-button:hover {
-    border: 1px solid rgba(53, 52, 48, 0.4);
-  }
-}
-
-@media (768px < width <= 1024px) {
-  .theme-light .page {
-    /* Вам также нужно будет написать ряд подобных селекторов */
-    background-image: var(--background-image);
-    background-color: var(--current-color);
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    display: grid;
-  }
-
-  .theme-light .content-section {
-    padding: 20px;
-  }
-
-  .theme-light .decorated-zone::before {
-    bottom: 20px;
-    left: 20px;
-    border-bottom: 1px solid var(--accent-color);
-    border-left: 1px solid var(--accent-color);
-  }
-
-  .theme-light .decorated-zone::after {
-    top: 20px;
-    right: 20px;
-    border-top: 1px solid var(--accent-color);
-    border-right: 1px solid var(--accent-color);
-  }
-
-  .theme-light .header {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr min-content 1fr;
-    padding-inline-start: 0;
-  }
-
-  .theme-light .header__check::before {
-    display: none;
-  }
-
-  .theme-light .header__check::after {
-    display: none;
-  }
-
-  .theme-light .header__theme-menu-button:hover {
-    border: 1px solid rgba(53, 52, 48, 0.4);
-  }
 }

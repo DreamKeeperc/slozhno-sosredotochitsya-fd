@@ -10,14 +10,10 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --background-image: url(../images/cover-image-dark.png);
-  --main-font: "IBM Plex mono", monospace, sans-serif;
   --bg-color: #ff0070;
   --text-color: #f1b2ce;
   --accent-color: #000028;
   --h1-color: #db00ff;
-  --main-size: 18px;
-  --bold: 700;
-  --normal: 400;
 }
 
 .theme-dark .page {

@@ -248,14 +248,6 @@ header {
     height: 100vh;
   }
 
-  .decorated-zone::after,
-  .decorated-zone::before {
-    content: "";
-    height: 25px;
-    width: 25px;
-    position: absolute;
-  }
-
   .decorated-zone::before {
     bottom: 20px;
     left: 20px;
@@ -513,14 +505,6 @@ header {
     position: relative;
     min-height: 768px;
     height: 100vh;
-  }
-
-  .decorated-zone::after,
-  .decorated-zone::before {
-    content: "";
-    height: 25px;
-    width: 25px;
-    position: absolute;
   }
 
   .decorated-zone::before {
