@@ -34,15 +34,11 @@
   }
 
   .decorated-zone::before {
-    bottom: 10px;
-    left: 10px;
     border-bottom: 1px solid var(--accent-color);
     border-left: 1px solid var(--accent-color);
   }
 
   .decorated-zone::after {
-    top: 10px;
-    right: 10px;
     border-top: 1px solid var(--accent-color);
     border-right: 1px solid var(--accent-color);
   }
@@ -83,15 +79,11 @@
 }
 
 .theme-light .decorated-zone::before {
-  bottom: 10px;
-  left: 10px;
   border-bottom: 1px solid var(--accent-color);
   border-left: 1px solid var(--accent-color);
 }
 
 .theme-light .decorated-zone::after {
-  top: 10px;
-  right: 10px;
   border-top: 1px solid var(--accent-color);
   border-right: 1px solid var(--accent-color);
 }
