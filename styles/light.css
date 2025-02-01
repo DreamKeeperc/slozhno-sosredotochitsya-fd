@@ -9,7 +9,7 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-  --background-image: url(../images/cover-image-light.png);
+  --background-image: url(./images/cover-image-light.png);
   --bg-color: #ff8dcb;
   --text-color: #353430;
   --accent-color: #353430;
@@ -20,12 +20,13 @@
 @media (prefers-color-scheme: light) {
   :root {
     /* Дублируем переменные светлой темы */
-    --background-image: url(../images/cover-image-light.png);
+    --background-image: url(./images/cover-image-light.png);
     --bg-color: #ff8dcb;
     --text-color: #353430;
     --accent-color: #353430;
     --h1-color: #ffc2e6;
     --current-color: #fff1f7;
+    rgba(50, 49, 45, 0.4)
   }
 
   .page {
@@ -43,25 +44,24 @@
     border-right: 1px solid var(--accent-color);
   }
 
+  .header__theme-menu-button_active {
+    border: 1px solid var(--accent-color);
+  }
+
   .header__theme-menu-button:hover {
-    border: 1px solid rgba(53, 52, 48, 0.4);
+    border: 1px solid rgba(50, 49, 45, 0.4);
   }
 
   .header__theme-menu {
-    font-family: var(--main-font);
     color: var(--accent-color);
-    font-size: var(--main-size);
   }
 
   .section__title {
     color: var(--accent-color);
-    font-size: var(--main-size);
-    font-weight: var(--bold);
-    line-height: 130%;
   }
 
   .card__text {
-    color: var(--accent-color);
+    color: var(--text-color);
   }
 
   .header__check::before {
@@ -93,16 +93,11 @@
 }
 
 .theme-light .header__theme-menu {
-  font-family: var(--main-font);
   color: var(--accent-color);
-  font-size: var(--main-size);
 }
 
 .theme-light .section__title {
   color: var(--accent-color);
-  font-size: var(--main-size);
-  font-weight: var(--bold);
-  line-height: 130%;
 }
 
 .theme-light .card__text {

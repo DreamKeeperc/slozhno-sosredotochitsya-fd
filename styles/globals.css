@@ -44,7 +44,6 @@ a {
 
 .title-decor {
   background-color: var(--bg-color);
-  color: var(--accent-color);
   max-height: max-content;
 }
 
