@@ -12,7 +12,8 @@
 }
 
 .content-section {
-  padding: 10px;
+  padding-inline: 10px;
+  padding-block: 10px;
 }
 
 header {
@@ -67,11 +68,15 @@ header {
 }
 
 .header__check {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  top: 13px;
+  right: 30px;
   position: absolute;
-  top: 0px;
-  right: 10px;
   grid-row-start: 1;
   grid-row-end: 2;
+  line-height: 139%;
 }
 
 .header__check::before {
@@ -80,9 +85,8 @@ header {
   text-transform: uppercase;
   color: var(--bg-color);
   position: absolute;
-  top: 0;
-  right: 31px;
   line-height: 25px;
+  right: 9px;
 }
 
 .header__check::after {
@@ -94,8 +98,6 @@ header {
   background-color: var(--bg-color);
   box-shadow: 0px 0px 4px 2px var(--bg-color);
   position: absolute;
-  top: 9px;
-  right: 9px;
 }
 
 .header__theme-menu {
@@ -197,6 +199,7 @@ h4.card__title {
 
 .card__link {
   text-shadow: 2px 2px 0 var(--bg-color);
+  text-decoration: none;
 }
 
 .card__link:hover {
@@ -236,14 +239,15 @@ h4.card__title {
   line-height: 82, 5%;
 }
 
-@media (376px < width <= 768px) {
+@media (min-width: 768px) {
   .page {
     /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
     gap: 40px;
   }
 
   .content-section {
-    padding: 20px;
+    padding-inline: 20px;
+    padding-block: 20px;
   }
 
   .header {
@@ -270,16 +274,12 @@ h4.card__title {
   }
 
   .header__subtitle {
-    justify-self: end;
     max-width: 364px;
   }
 
-  .header__check::before {
-    right: 42px;
-  }
-
-  .header__check::after {
-    right: 20px;
+  .header__check {
+    top: 13px;
+    right: 38px;
   }
 
   .content {
@@ -347,14 +347,15 @@ h4.card__title {
   }
 }
 
-@media (768px < width <= 1024px) {
+@media (min-width: 1024px) {
   .page {
     /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
     gap: 40px;
   }
 
   .content-section {
-    padding: 20px;
+    padding-inline: 20px;
+    padding-block: 20px;
   }
 
   .header {
@@ -385,12 +386,8 @@ h4.card__title {
     max-width: 491px;
   }
 
-  .header__check::before {
-    right: 40px;
-  }
-
-  .header__check::after {
-    right: 19px;
+  .header__check {
+    right: 38px;
   }
 
   .header__theme-menu {
@@ -472,134 +469,4 @@ h4.card__title {
   .footer span {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
-}
-
-@media (width > 1024px) {
-  .page {
-    /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
-    gap: 40px;
-  }
-
-  .content-section {
-    padding: 20px;
-  }
-
-  .header {
-    padding-inline-start: 0;
-  }
-
-  .decorated-zone {
-    min-height: 768px;
-  }
-
-  .decorated-zone::before {
-    bottom: 20px;
-    left: 20px;
-  }
-
-  .decorated-zone::after {
-    top: 20px;
-    right: 20px;
-  }
-
-  .header__title {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    justify-self: start;
-  }
-
-  .header__subtitle {
-    width: max-content;
-    max-width: 491px;
-  }
-
-  .header__check::before {
-    right: 40px;
-  }
-
-  .header__check::after {
-    right: 19px;
-  }
-
-  .header__theme-menu {
-    justify-self: center;
-    align-self: start;
-    margin-inline-start: 20px;
-  }
-
-  .header__theme-menu-list {
-    flex-direction: row;
-  }
-
-  .content {
-    gap: 80px;
-  }
-
-  .section__focus {
-    grid-template-columns: repeat(2, auto);
-  }
-
-  .section__focus .section-list {
-    min-width: min-content;
-    width: 80vw;
-  }
-
-  .section__concentration .section__title {
-    max-width: 315px;
-  }
-
-  .section__concentration .section-list {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .section__advice .section-list {
-    grid-column-start: 2;
-    grid-column-end: auto;
-    max-width: 749px;
-  }
-
-  .gallery__section {
-    gap: 20px;
-  }
-
-  .gallery__section .section-list {
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(3, auto);
-    gap: 20px;
-  }
-
-  .gallery__section .section-list-item:first-child {
-    grid-column: span 2;
-    max-height: 260px;
-  }
-
-  .gallery__section .section-list-item:nth-child(2) {
-    grid-row: span 2;
-  }
-
-  .gallery__section .section-list-item:nth-child(3) {
-    grid-row: span 2;
-  }
-
-  .gallery__section .section-list-item:nth-child(4) {
-    max-height: 315px;
-  }
-
-  .gallery__section .section-list-item:last-child {
-    grid-column: span 2;
-    max-height: 433px;
-  }
-
-  .gallery__image {
-    inline-size: 100%;
-    block-size: 100%;
-    object-fit: cover;
-  }
-
-  .footer span {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  }
-}
-
-* {
-  outline: 1px solid g;
 }
