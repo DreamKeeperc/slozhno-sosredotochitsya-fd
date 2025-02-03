@@ -4,12 +4,17 @@
 */
 
 :root {
-  --background-image: url(../images/cover-image-dark.png);
+  --background-image: url("../images/cover-image-dark.png");
   --main-font: "IBM Plex mono", monospace;
+  --bg-main-color: #000028;
   --bg-color: #ff0070;
+  --title-color: #000028;
   --text-color: #f1b2ce;
-  --accent-color: #000028;
   --h1-color: #db00ff;
+  --h1-shadow: #ff0070;
+  --accent-color: #ff0070;
+  --link-shadow-color: #ff0070;
+  --menu-hover-color: rgba(255, 0, 112, 0.4);
   --main-size: 18px;
   --bold: 700;
   --normal: 400;
