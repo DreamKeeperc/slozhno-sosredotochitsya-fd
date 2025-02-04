@@ -27,7 +27,7 @@ header {
 .decorated-zone {
   position: relative;
   min-height: 668px;
-  height: 100vh;
+  height: 100%;
 }
 
 .decorated-zone::after,
@@ -151,6 +151,11 @@ header {
 }
 
 .section__advice .section-list-item {
+  display: grid;
+  gap: 20px;
+}
+
+.advice {
   display: grid;
   gap: 20px;
 }
@@ -402,8 +407,7 @@ h4.card__title {
   }
 
   .section__focus .section-list {
-    max-width: 648.92px;
-    width: max-content;
+    min-width: 648.92px;
   }
 
   .section__concentration .section__title {
@@ -415,10 +419,7 @@ h4.card__title {
   }
 
   .section__advice .section-list {
-    grid-column-start: 2;
-    grid-column-end: auto;
-    max-width: 649px;
-    width: max-content;
+    min-width: 649px;
   }
 
   .gallery__section {

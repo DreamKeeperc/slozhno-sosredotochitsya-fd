@@ -31,7 +31,7 @@
     --h1-color: #ffc2e6;
     --accent-color: #353430;
     --link-shadow-color: #ff8dcb;
-    --menu-hover-color: rgba(53, 52, 48, 0.4);
+    --menu-hover-color: rgba(50, 49, 45, 0.4);
   }
 
   .header__check::before {
