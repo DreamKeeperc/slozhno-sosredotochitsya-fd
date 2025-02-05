@@ -285,12 +285,15 @@ h4.card__title {
   }
 
   .section__focus {
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: 236px 1fr;
+  }
+
+  .section__focus .section__title {
+    max-width: 236px;
   }
 
   .section__focus .section-list {
-    max-width: 472px;
-    width: max-content;
+    min-width: fit-content;
   }
 
   .section__concentration .section__title {
@@ -298,12 +301,11 @@ h4.card__title {
   }
 
   .section__advice {
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: 236px 1fr;
   }
 
   .section__advice .section-list {
-    max-width: 472px;
-    width: max-content;
+    min-width: fit-content;
   }
 
   .gallery__section {
@@ -403,11 +405,15 @@ h4.card__title {
   }
 
   .section__focus {
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: 315px 1fr;
   }
 
   .section__focus .section-list {
-    min-width: 648.92px;
+    min-width: fit-content;
+  }
+
+  .section__focus .section__title {
+    max-width: 315px;
   }
 
   .section__concentration .section__title {
@@ -418,8 +424,12 @@ h4.card__title {
     grid-template-columns: repeat(3, 1fr);
   }
 
+  .section__advice {
+    grid-template-columns: 315px 1fr;
+  }
+
   .section__advice .section-list {
-    min-width: 649px;
+    min-width: fit-content;
   }
 
   .gallery__section {

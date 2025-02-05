@@ -18,6 +18,7 @@
   --h1-shadow: #ff0070;
   --accent-color: #353430;
   --link-shadow-color: #ff8dcb;
+  --menu-hover-color: rgba(50, 49, 45, 0.4);
 }
 
 @media (prefers-color-scheme: light) {
